@@ -1,0 +1,22 @@
+<h1>Log In</h1>
+
+<fieldset>
+	<legend>Enter your Username and Password</legend>
+
+<% form_for :user do |f| %>
+  <%= f.error_messages %>
+
+	<p>
+ 	<%= f.label "User Name" %><br />
+ 	<%= f.text_field :nickname %>
+	</p>
+	<p>
+ 	<%= f.label :password %><br />
+ 	<%= f.password_field :password %>
+	</p>
+	<p>
+ 	<%= f.submit "Submit!" %>
+	</p>
+	
+<% end %>
+</fieldset>
