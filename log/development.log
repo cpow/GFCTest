@@ -5337,3 +5337,311 @@ Processing SiteController#index (for 127.0.0.1 at 2009-08-11 17:17:14) [GET]
 Rendering template within layouts/application
 Rendering site/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 14:50:55) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-12 14:50:57) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-12 14:50:58) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 14:50:59) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 14:50:59) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 61ms (View: 59, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 14:51:01) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 14:51:01) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-12 14:51:02) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/site/about]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 14:51:02) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-12 14:51:02) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/site/help]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 14:51:02) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 14:51:04) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 14:51:04) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:27:15) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:27:15) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:27:21) [POST]
+  Parameters: {"user"=>{"nickname"=>"test", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'test' AND "users"."password" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 374ms (DB: 1) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:27:21) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:27:23) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:27:23) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:27:28) [POST]
+  Parameters: {"user"=>{"nickname"=>"admin", "password"=>"utest123"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+Redirected to http://0.0.0.0:3000/users
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-12 15:27:28) [GET]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-08-12 15:27:32) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_form (3.0ms)
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-08-12 15:27:49) [POST]
+  Parameters: {"user"=>{"name"=>"roy solomon", "email_confirmation"=>"roy@utest.com", "password_confirmation"=>"test", "nickname"=>"Roy", "password"=>"test", "email"=>"roy@utest.com"}, "commit"=>"Create", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Exists (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."nickname" = 'Roy') LIMIT 1[0m
+  [4;35;1mUser Exists (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."email" = 'roy@utest.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "updated_at", "nickname", "password", "email", "created_at") VALUES('roy solomon', '2009-08-12 19:27:49', 'Roy', 'test', 'roy@utest.com', '2009-08-12 19:27:49')[0m
+Redirected to http://0.0.0.0:3000/users/3
+Completed in 39ms (DB: 1) | 302 Found [http://0.0.0.0/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-08-12 15:27:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 29ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/users/3]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-12 15:27:51) [GET]
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as [:require_admin] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:27:51) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:27:52) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:27:52) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:01) [POST]
+  Parameters: {"user"=>{"nickname"=>"Roy", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'Roy' AND "users"."password" = 'test') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/login
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:05) [POST]
+  Parameters: {"user"=>{"nickname"=>"roy", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'roy' AND "users"."password" = 'test') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/login
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:21) [POST]
+  Parameters: {"user"=>{"nickname"=>"Roy Solomon", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'Roy Solomon' AND "users"."password" = 'test') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/login
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:28) [POST]
+  Parameters: {"user"=>{"nickname"=>"roy solomon", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'roy solomon' AND "users"."password" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:28:28) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:28:30) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:30) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:28:35) [POST]
+  Parameters: {"user"=>{"nickname"=>"admin", "password"=>"utest123"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+Redirected to http://0.0.0.0:3000/users
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-12 15:28:35) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-12 15:29:06) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:29:13) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:29:13) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:29:16) [POST]
+  Parameters: {"user"=>{"nickname"=>"Roy", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."name" = 'Roy' AND "users"."password" = 'test') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/login
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:30:01) [POST]
+  Parameters: {"user"=>{"nickname"=>"Roy", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."nickname" = 'Roy' AND "users"."password" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 74ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:30:02) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:30:08) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:30:08) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:30:11) [POST]
+  Parameters: {"user"=>{"nickname"=>"Roy", "password"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"TkDZmoqsxLqgJw+/62Hpj7WXChI3HBUYhoZEXhMpuyw="}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."nickname" = 'Roy' AND "users"."password" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-12 15:30:11) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-12 15:30:32) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-12 15:30:32) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]

@@ -18,7 +18,7 @@ end
          flash[:notice] = "Administrator has logged in"
          redirect_to :controller => "users", :action => "index"
        else
-         user = User.find_by_name_and_password(@user.nickname, @user.password) 
+         user = User.find_by_nickname_and_password(@user.nickname, @user.password) 
          if user 
            session[:user_id] = user.id 
            flash[:notice] = "User #{user.name} logged in!" 
