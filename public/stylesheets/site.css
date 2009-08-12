@@ -31,9 +31,12 @@ body {
 }
 #content h2 {
 	color: #4d4e50;
-	font-size: 14pt;
+	font-size: 12pt;
 	font-family: arial;
 	font-weight: bold;
+}
+#tabbedContent {
+	margin-left: 24px;
 }
 #sidebar {
 	position: absolute;
