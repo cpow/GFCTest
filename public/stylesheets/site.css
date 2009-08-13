@@ -62,8 +62,12 @@ body {
 	color: #00A8CC;
 }
 
+fieldset {
+	background: #f3ede1;
+}
+
 legend {
-	background: black;
+	background: #4d4e50;
 	color: white;
 	padding: .25em;
 }

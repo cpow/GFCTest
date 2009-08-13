@@ -6307,3 +6307,117 @@ Processing UsersController#index (for 127.0.0.1 at 2009-08-13 11:40:39) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 11:57:32) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 33ms (View: 32, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-13 11:57:34) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-13 11:57:35) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 13:27:53) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 13:27:53) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 13:39:45) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-13 13:39:46) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-13 13:39:49) [GET]
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 27ms (View: 8, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 13:39:51) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 14:46:09) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing UsersController#logout (for 127.0.0.1 at 2009-08-13 14:47:23) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Completed in 2ms (DB: 0) | 302 Found [http://0.0.0.0/users/logout]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:47:23) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:47:52) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 14:47:59) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:47:59) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-13 14:48:01) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/site/about]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:48:01) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-13 14:48:01) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://0.0.0.0/site/help]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:48:01) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
