@@ -6243,3 +6243,28 @@ Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:08:34) [GET]
 Rendering template within layouts/application
 Rendering site/index
 Completed in 7ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-08-13 10:14:16) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-13 10:14:17) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-13 10:14:18) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:14:19) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
