@@ -14,15 +14,21 @@
 			<div id= "nav">
 					<span style="float: right"> 
 							<% if session[:user_id].nil? %>
-							<%= link_to_unless_current "Login", :controller => 'users', :action => 'login'%> |
-							<%= link_to_unless_current "Register", :controller => 'users', :action => 'new'%>
+							<%= link_to_unless_current "Login", :controller => 'users', :action => 'login'%>
 							<% else %>
 							<%= link_to_unless_current "Logout", :controller => 'users', :action => 'logout'%>
 							<% end %>
 					</span>
+					<% if session[:user_id] == "admin"%>
+					<%= link_to_unless_current "Home", :controller => 'site', :action => 'index'%> |
+					<%= link_to_unless_current "About", :controller => 'site', :action => 'about'%> |
+					<%= link_to_unless_current "Help", :controller => 'site', :action => 'help'%> |
+					<%= link_to_unless_current "Users", :controller => 'users', :action => 'index'%>
+					<% else %>
 					<%= link_to_unless_current "Home", :controller => 'site', :action => 'index'%> |
 					<%= link_to_unless_current "About", :controller => 'site', :action => 'about'%> |
 					<%= link_to_unless_current "Help", :controller => 'site', :action => 'help'%>
+					<% end %>
 			</div>
 			<div id= "sidebar">
 				<!-- Include the Google Friend Connect javascript library. -->

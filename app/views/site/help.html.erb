@@ -1,4 +1,33 @@
 <h1>Help</h1>
 <body>
-	This will be updated soon...
+	This is a general help section. This will be updated according to issues that need to be addressed
+	
+	<h1> Configuring the uTest Proxy </h1>
+	<div id="tabbedContent">
+	<h2>Configuring Firefox</h2>
+
+	Tools -> options -> advanced<br/>
+	Network tab<br/>
+	configuration -> settings button<br/>
+	select the 'Manual proxy configurations' radio button.<br/>
+	HTTP Proxy = proxy.utest.com<br/>
+	Port = 9999<br/><br/>
+
+	Save
+	
+	<h2>Configuring Internet Explorer</h2>
+
+	Tools -> internet options<br/>
+	Connections -> LAN settings<br/>
+	'Proxy server'<br/>
+	HTTP Proxy = pr2.utest.com<br/>
+	Port = 9999<br/><br/>
+	</div>
+
+	Now the browser is using the uTest proxy, just try any url like <a href="www.google.com" >www.google.com</a> and the proxy will ask for a username and password, you should use these credentials:<br/><br/>
+
+	Username: utest<br/>
+	Password: proxy<br/><br/>
+
+	And that's all, you are surfing internet from the uTest IP.
 	</body>
