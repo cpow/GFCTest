@@ -42,7 +42,7 @@ body {
 #sidebar {
 	position: absolute;
 	top: 90px;
-	right: 10px;
+	margin-left: 685px;
 	width: 300px;
 	padding: 0;
 }
