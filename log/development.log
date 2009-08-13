@@ -6219,3 +6219,27 @@ Processing SiteController#help (for 127.0.0.1 at 2009-08-13 10:02:49) [GET]
 Rendering template within layouts/application
 Rendering site/help
 Completed in 16ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-13 10:05:59) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:07:08) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:08:10) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:08:34) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/]
