@@ -1,14 +1,14 @@
 <h1>Log In</h1>
 
 <fieldset>
-	<legend>Enter your Username and Password</legend>
+	<legend>Enter your Email and Password</legend>
 
 <% form_for :user do |f| %>
   <%= f.error_messages %>
 
 	<p>
- 	<%= f.label "Nickname" %><br />
- 	<%= f.text_field :nickname %>
+ 	<%= f.label "Email" %><br />
+ 	<%= f.text_field :email %>
 	</p>
 	<p>
  	<%= f.label :password %><br />

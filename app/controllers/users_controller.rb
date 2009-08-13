@@ -13,12 +13,12 @@ end
     def login 
      if request.post? and params[:user]
        @user = User.new(params[:user])
-       if @user.nickname == "admin" && @user.password =="utest123"
+       if @user.email == "admin" && @user.password =="utest123"
          session[:user_id] = "admin"
          flash[:notice] = "Administrator has logged in"
          redirect_to :controller => "users", :action => "index"
        else
-         user = User.find_by_nickname_and_password(@user.nickname, @user.password) 
+         user = User.find_by_email_and_password(@user.email, @user.password) 
          if user 
            session[:user_id] = user.id 
            flash[:notice] = "User #{user.name} logged in!" 
