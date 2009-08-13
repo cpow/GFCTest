@@ -6268,3 +6268,28 @@ Processing SiteController#index (for 127.0.0.1 at 2009-08-13 10:14:19) [GET]
 Rendering template within layouts/application
 Rendering site/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 11:32:50) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 36ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 11:32:50) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 62ms (View: 61, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 11:32:58) [POST]
+  Parameters: {"user"=>{"password"=>"utest123", "email"=>"admin"}, "commit"=>"Submit!", "authenticity_token"=>"Qz7z3CE4K1SMVSOBqZJBvzi+cIK3JzSlRVziTzrbGXU="}
+Redirected to http://0.0.0.0:3000/users
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-08-13 11:32:58) [GET]
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/users]
