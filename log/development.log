@@ -6421,3 +6421,15 @@ Processing UsersController#login (for 127.0.0.1 at 2009-08-13 14:48:01) [GET]
 Rendering template within layouts/users
 Rendering users/login
 Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-08-13 15:12:38) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-08-13 15:12:38) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
