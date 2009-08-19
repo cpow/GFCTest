@@ -11,5 +11,8 @@ class SiteController < ApplicationController
 
   def about
   end
+  
+  def gadgets
+  end
 
 end
