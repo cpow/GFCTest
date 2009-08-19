@@ -6566,3 +6566,27 @@ Processing SiteController#gadgets (for 127.0.0.1 at 2009-08-19 16:31:49) [GET]
 Rendering template within layouts/application
 Rendering site/gadgets
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/site/gadgets]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-19 16:34:33) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#gadgets (for 127.0.0.1 at 2009-08-19 16:34:33) [GET]
+Rendering template within layouts/application
+Rendering site/gadgets
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/site/gadgets]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-08-19 16:34:35) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 45ms (View: 44, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#gadgets (for 127.0.0.1 at 2009-08-19 16:34:36) [GET]
+Rendering template within layouts/application
+Rendering site/gadgets
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/site/gadgets]

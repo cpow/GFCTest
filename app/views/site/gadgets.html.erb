@@ -1,0 +1,18 @@
+<h1>Gadget Testing<h1/>
+	<div id="tabbedContent">
+		<h2>Event Gadget<h2/>
+			<!-- Include the Google Friend Connect javascript library. -->
+			<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
+			<!-- Define the div tag where the gadget will be inserted. -->
+			<div id="div-3565421801462078327" style="width:300px;border:1px solid #cccccc;"></div>
+			<!-- Render the gadget into a div. -->
+			<script type="text/javascript">
+			google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+			google.friendconnect.container.renderOpenSocialGadget(
+			 { id: 'div-3565421801462078327',
+			   url:'http://www.google.com/ig/modules/socialevent.xml',
+			   site: '00339635363751239472',
+			   'view-params':{"title":"Test Event","scope":"PAGE","tz":"America/New_York","start":"2009-08-20 10:00:00","address":"5 cambridge center, cambridge, ma","description":"This is just a test to test out the event gadget.","end":"2009-08-31 10:00:00"}
+			 });
+			</script>
+	</div>
