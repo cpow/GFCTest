@@ -1,0 +1,18 @@
+<table>
+<% @posts.each do |post| %>
+
+<tr valign= "top">
+	<td>
+		<h1><%= h(post.title) %><br /></h1>
+		
+			<%= h(post.body) %>
+			
+			<div id="postContent">
+				<%= post.created_at.strftime("%A, %b %d")%><br />
+			</div><br />
+	</td>
+</tr>
+<% end %>
+</table>
+
+<br /><br />

@@ -22,12 +22,15 @@
 					</span>
 					<% if session[:user_id] == "admin"%>
 					<%= link_to_unless_current "Home", :controller => 'site', :action => 'index'%> |
+					<%= link_to_unless_current "Blog", :controller => 'posts', :action => 'index'%> |
 					<%= link_to_unless_current "About", :controller => 'site', :action => 'about'%> |
 					<%= link_to_unless_current "Help", :controller => 'site', :action => 'help'%> |
 					<%= link_to_unless_current "Gadget Testing", :controller => 'site', :action => 'gadgets'%> |
-					<%= link_to_unless_current "Users", :controller => 'users', :action => 'index'%>
+					<%= link_to_unless_current "Users", :controller => 'users', :action => 'index'%> |
+					<%= link_to_unless_current "New Post", :controller => 'posts', :action => 'new'%>
 					<% else %>
 					<%= link_to_unless_current "Home", :controller => 'site', :action => 'index'%> |
+					<%= link_to_unless_current "Blog", :controller => 'posts', :action => 'index'%> |
 					<%= link_to_unless_current "About", :controller => 'site', :action => 'about'%> |
 					<%= link_to_unless_current "Help", :controller => 'site', :action => 'help'%> |
 					<%= link_to_unless_current "Gadget Testing", :controller => 'site', :action => 'gadgets'%>

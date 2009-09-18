@@ -62,6 +62,11 @@ body {
 #notice {
 	color: #00A8CC;
 }
+#postContent {
+	color: #4d4e50;
+	font-size: 8pt;
+	margin-left: 10px;
+}
 
 fieldset {
 	background: #f3ede1;
