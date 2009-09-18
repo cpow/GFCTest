@@ -8758,3 +8758,137 @@ Rendered posts/_post (0.6ms)
 Rendered posts/_post (0.6ms)
 Rendered posts/_post (0.6ms)
 Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:55:59) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+
+ActionView::TemplateError (undefined method `destroy_post_path' for #<ActionView::Base:0x230de80>) on line #9 of app/views/posts/_post.html.erb:
+6: 			<%= post.created_at.strftime("%A, %b %d")%><br />
+7: 		</div>
+8: 		<% if session[:user_id] == "admin"%>
+9: 			<%= link_to 'Delete', destroy_post_path(post) %>
+10: 		<% end %>
+11: 		<br />
+
+    app/views/posts/_post.html.erb:9
+    app/views/posts/index.html.erb:1
+    app/controllers/posts_controller.rb:21:in `index'
+
+Rendered rescues/_trace (125.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:57:24) [GET]
+  [4;35;1mPost Load (1.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.8ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (1.0ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (1.0ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.8ms)
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:58:03) [GET]
+  [4;36;1mPost Load (1.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.9ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (1.0ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.9ms)
+Completed in 25ms (View: 18, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:58:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.9ms)
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0x238c654>) on line #6 of app/views/posts/show.html.erb:
+3: <%= link_to 'Back', posts_path %> |
+4: 	<% if session[:user_id] == "admin"%>
+5: 		<%= link_to 'Edit', edit_post_path(@post) %> |
+6: 		<%= link_to 'Delete', post, :method => :delete, :confirm => "Are you sure?" %>
+7: 	<% end %>
+
+    app/views/posts/show.html.erb:6
+    app/controllers/posts_controller.rb:32:in `show'
+
+Rendered rescues/_trace (113.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:58:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:58:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:59:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.6ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-09-18 13:59:23) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:59:25) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.1ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts]
