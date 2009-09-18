@@ -7721,3 +7721,1040 @@ Processing PostsController#index (for 127.0.0.1 at 2009-09-18 11:44:56) [GET]
 Rendering template within layouts/application
 Rendering posts/index
 Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-09-18 12:11:33) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:11:33) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-09-18 12:11:34) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing SiteController#help (for 127.0.0.1 at 2009-09-18 12:11:34) [GET]
+Rendering template within layouts/application
+Rendering site/help
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/site/help]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-09-18 12:11:35) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-09-18 12:39:18) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 83ms (View: 81, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:39:20) [GET]
+  [4;36;1mPost Load (0.8ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:39:21) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+
+ActionView::TemplateError (undefined method `textile_editor' for #<ActionView::Base:0x24e7e04>) on line #10 of app/views/posts/new.html.erb:
+7:     <%= f.label :title %><br />
+8:     <%= f.text_field :title %>
+9:   </p>
+10: <%= textile_editor 'object', 'field' -%>
+11:   <p>
+12:     <%= f.label :body %><br />
+13:     <%= f.text_area :body %>
+
+    app/views/posts/new.html.erb:10
+    app/views/posts/new.html.erb:3
+    app/controllers/posts_controller.rb:43:in `new'
+
+Rendered rescues/_trace (47.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:40:04) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:44:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 12:45:02) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"title"=>"sdaf"}}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 16:45:02', 'sdaf', NULL, '2009-09-18 16:45:02')[0m
+Redirected to http://0.0.0.0:3000/posts/4
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 12:45:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/posts/4]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:45:07) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:45:11) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 12:45:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"title"=>"fgsdfg"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 16:45:24', 'fgsdfg', NULL, '2009-09-18 16:45:24')[0m
+Redirected to http://0.0.0.0:3000/posts/5
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 12:45:24) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:45:27) [GET]
+  [4;36;1mPost Load (0.9ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:45:43) [GET]
+  [4;35;1mPost Load (0.9ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:45:44) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:46:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 12:46:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<b> bold </b>", "title"=>""}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 16:46:36', '', '<b> bold </b>', '2009-09-18 16:46:36')[0m
+Redirected to http://0.0.0.0:3000/posts/6
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 12:46:36) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/6]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 12:46:39) [GET]
+  [4;36;1mPost Load (1.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 12:50:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 12:50:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<br /><br /><br /><br /><br /><br /><br /><br /><br /> something <br /><br /><br /><br /><br /><br /><br /><br /> something else", "title"=>"new title"}}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 16:50:54', 'new title', '<br /><br /><br /><br /><br /><br /><br /><br /><br /> something <br /><br /><br /><br /><br /><br /><br /><br /> something else', '2009-09-18 16:50:54')[0m
+Redirected to http://0.0.0.0:3000/posts/7
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 12:50:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/7]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:00:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 7) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.3ms)
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://0.0.0.0/posts/7]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:00:21) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:00:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 76ms (View: 71, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:00:28) [GET]
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 9ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:01:45) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.0ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.2ms)
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:02:09) [GET]
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+ERROR: compiling _run_erb_app47views47posts47index46html46erb RAISED compile error
+/Users/chrisp/Desktop/GFCTest/app/views/posts/index.html.erb:13: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47posts47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<tr valign= \"top\">\n"
+@output_buffer.concat "\t<td>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( render :partial => @posts ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t</td>\n"
+@output_buffer.concat "</tr>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "</table>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br /><br />"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/chrisp/Desktop/GFCTest/app/views/posts/index.html.erb:13:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:943:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/chrisp/Desktop/GFCTest/app/controllers/posts_controller.rb:21:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1322:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/chrisp/Desktop/GFCTest/app/views/posts/index.html.erb:13: syntax error, unexpected kENSURE, expecting $end) on line #13 of app/views/posts/index.html.erb:
+10: </table>
+11: 
+12: <br /><br />
+
+    app/views/posts/index.html.erb:13:in `compile!'
+    app/controllers/posts_controller.rb:21:in `index'
+
+Rendered rescues/_trace (45.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:02:59) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.1ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.2ms)
+Rendered posts/_post (0.3ms)
+Rendered posts/_post (0.3ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:03:46) [GET]
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 90ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:06:41) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.9ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:06:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.9ms)
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:06:46) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:06:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:06:59) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Completed in 16ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:07:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:07:03) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.5ms)
+Rendered posts/_post (0.5ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:10:25) [GET]
+  [4;35;1mPost Load (1.1ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.4ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:10:45) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 13:11:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"this is a post.\r\n\r\nWith a couple of new lines.", "title"=>"Newest Post"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 17:11:09', 'Newest Post', 'this is a post.
+
+With a couple of new lines.', '2009-09-18 17:11:09')[0m
+Redirected to http://0.0.0.0:3000/posts/8
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:11:09) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.1ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/8]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:11:13) [GET]
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (1.2ms)
+Completed in 19ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:12:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 13:13:04) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<p>This is some basic text<br /> with a line break.\r\n\r\n<b>BOLD</b>", "title"=>"sdgfd"}}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 17:13:04', 'sdgfd', '<p>This is some basic text<br /> with a line break.
+
+<b>BOLD</b>', '2009-09-18 17:13:04')[0m
+Redirected to http://0.0.0.0:3000/posts/9
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:13:04) [GET]
+  Parameters: {"id"=>"9"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.2ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/9]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:13:45) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 9) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/9]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:13:47) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 13:13:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<b> bold </b>", "title"=>"something"}}
+  [4;36;1mPost Create (0.5ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 17:13:58', 'something', '<b> bold </b>', '2009-09-18 17:13:58')[0m
+Redirected to http://0.0.0.0:3000/posts/10
+Completed in 81ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:13:58) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.8ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/10]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:14:23) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 13:14:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<b>BOLD</b>", "title"=>"somethign"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 17:14:31', 'somethign', '<b>BOLD</b>', '2009-09-18 17:14:31')[0m
+Redirected to http://0.0.0.0:3000/posts/11
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:14:31) [GET]
+  Parameters: {"id"=>"11"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/11]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:16:10) [GET]
+  [4;36;1mPost Load (1.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (3.0ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 13:16:19) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 13:16:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"<strong>something</strong>", "title"=>""}}
+  [4;35;1mPost Create (0.4ms)[0m   [0mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-09-18 17:16:32', '', '<strong>something</strong>', '2009-09-18 17:16:32')[0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:16:32) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-09-18 13:18:19) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-09-18 13:18:20) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:18:22) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.9ms)
+Rendered posts/_post (1.3ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (1.2ms)
+Completed in 26ms (View: 17, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:18:24) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/10]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:18:28) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/posts/10/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:19:58) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:19:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+
+ActionView::TemplateError (undefined local variable or method `session_id' for #<ActionView::Base:0x23dfdb8>) on line #4 of app/views/posts/show.html.erb:
+1: <%= render :partial => @post %>
+2: 
+3: <%= link_to 'Back', posts_path %> |
+4: 	<% if session_id[:user] = "admin"%>
+5: 		<%= link_to 'Edit', @post %>
+6: 	<% end %>
+
+    app/views/posts/show.html.erb:4
+    app/controllers/posts_controller.rb:32:in `show'
+
+Rendered rescues/_trace (47.1ms)
+Rendered rescues/_request_and_response (69.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:20:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.8ms)
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:20:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:20:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:21:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.6ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:21:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:21:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.4ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:21:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 13:21:45) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"This is the body of a post.\r\n\r\ntwo new lines.", "title"=>"This is a title"}, "id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Update (0.5ms)[0m   [0mUPDATE "posts" SET "body" = 'This is the body of a post.
+
+two new lines.', "updated_at" = '2009-09-18 17:21:45' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed in 12ms (DB: 1) | 302 Found [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:21:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:21:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 13:22:09) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"This is the body of a post.</p>\r\n\r\n<p>two new lines.\r\n\r\n</b>bold<b>", "title"=>"This is a title"}, "id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Update (0.4ms)[0m   [0mUPDATE "posts" SET "body" = 'This is the body of a post.</p>
+
+<p>two new lines.
+
+</b>bold<b>', "updated_at" = '2009-09-18 17:22:09' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed in 11ms (DB: 1) | 302 Found [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:22:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:22:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 13:22:21) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"This is a post\r\n\r\n\r\nWith three new lines", "title"=>"This is a title"}, "id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Update (0.4ms)[0m   [0mUPDATE "posts" SET "body" = 'This is a post
+
+
+With three new lines', "updated_at" = '2009-09-18 17:22:21' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed in 11ms (DB: 1) | 302 Found [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:22:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:22:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/posts/1/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 13:22:54) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"This is a post\r\n\r\n\r\nWith three new lines \\n\\n", "title"=>"This is a title"}, "id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Update (0.4ms)[0m   [0mUPDATE "posts" SET "body" = 'This is a post
+
+
+With three new lines \n\n', "updated_at" = '2009-09-18 17:22:54' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed in 11ms (DB: 1) | 302 Found [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:22:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:22:56) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:22:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.7ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 13:23:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 13:32:40) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"gzU3PWn14pByphKILdgnIroPF5NsKzRneBQCn+bSYFI=", "post"=>{"body"=>"This is a post\r\n\r\n\r\nWith three new lines.\r\n\r\n*strong*", "title"=>"This is a title"}, "id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Update (0.4ms)[0m   [0mUPDATE "posts" SET "body" = 'This is a post
+
+
+With three new lines.
+
+*strong*', "updated_at" = '2009-09-18 17:32:40' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/posts/1
+Completed in 12ms (DB: 1) | 302 Found [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:32:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.6ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:32:42) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.8ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (1.1ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 21ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 13:32:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (1.5ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 13:32:46) [GET]
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Rendered posts/_post (2.5ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.7ms)
+Rendered posts/_post (0.8ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Rendered posts/_post (0.6ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts]

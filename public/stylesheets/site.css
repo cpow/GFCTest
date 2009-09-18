@@ -30,6 +30,14 @@ body {
 	font-weight: bold;
 	font-family: arial;
 }
+#content a:link, #content a:visited {
+	color: #67B64A;
+	border: none;
+}
+#content a:link, #content a:active {
+	color: #67B64A;
+	border: none;
+}
 #content h2 {
 	color: #4d4e50;
 	font-size: 12pt;
