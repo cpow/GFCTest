@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :require_admin, :only => [:create, :new, :edit, :update]
+  before_filter :require_admin, :only => [:create, :new, :edit, :destroy]
 
   def require_admin
     if session[:user_id] != "admin"
