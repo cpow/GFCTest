@@ -8892,3 +8892,12 @@ Rendered posts/_post (0.6ms)
 Rendered posts/_post (0.7ms)
 Rendered posts/_post (0.7ms)
 Completed in 22ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 14:32:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/show
+Rendered posts/_post (2.0ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/posts/1]
