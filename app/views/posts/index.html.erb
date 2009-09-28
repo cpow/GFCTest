@@ -1,3 +1,7 @@
 <%= render :partial => @posts %>
 
 <br /><br />
+
+	<% if session[:user_id] == "admin"%>
+		<%= link_to 'Comments', :controller => :comments, :action => :index %>
+	<%end%>

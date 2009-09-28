@@ -3,7 +3,12 @@
 	<%= simple_format h(post.body) %>
 		
 		<div id="postContent">
-			<%= post.created_at.strftime("%A, %b %d")%><br />
+			Posted <%= post.created_at.strftime("%A, %b %d")%> <br />
+			
+			<% link_to(post) do %>
+			<%= post.comments.count%> comments
+			<%end%>
+			<br />
 		</div>
 		
 		<br />
