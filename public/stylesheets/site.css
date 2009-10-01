@@ -70,6 +70,9 @@ body {
 #notice {
 	color: #00A8CC;
 }
+#error{
+	color: red;
+}
 #postContent {
 	color: #00A8CC;
 	font-size: 10pt;

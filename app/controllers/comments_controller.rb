@@ -34,11 +34,12 @@ class CommentsController < ApplicationController
   # GET /comments/new
   # GET /comments/new.xml
   def new
-    @comment = Comment.new
-
+   @comment = Comment.new
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @comment }
+      
     end
   end
 
@@ -50,9 +51,17 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.xml
   def create
-       @post = Post.find(params[:post_id])
-       @comment = @post.comments.create!(params[:comment])
-       redirect_to @post
+    @post = Post.find(params[:post_id])
+    
+    @comment = @post.comments.new(params[:comment])
+    
+    if @comment.save
+      flash[:notice] = 'Thank you for the comment'
+      redirect_to @post
+    else
+      flash[:notice] = "You can't post nothing!"
+      redirect_to @post
+    end
  end
 
   # PUT /comments/1

@@ -16696,3 +16696,1437 @@ Rendered comments/_comment (0.4ms)
 Rendered comments/_comment (0.3ms)
 Rendered comments/_comment (0.3ms)
 Completed in 33ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:03:39) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:54:in `create'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:04:41) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:54:in `create'
+
+Rendered rescues/_trace (40.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:05:26) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:54:in `create'
+
+Rendered rescues/_trace (111.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:09:03) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (6.5ms)
+  [4;35;1mComment Load (1.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:09:05) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"sadfsdf"}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+  [4;35;1mComment Create (0.5ms)[0m   [0mINSERT INTO "comments" ("updated_at", "body", "post_id", "user_id", "created_at", "email") VALUES('2009-10-01 16:09:05', 'sadfsdf', 18, NULL, '2009-10-01 16:09:05', NULL)[0m
+Redirected to http://0.0.0.0:3000/posts/18
+Completed in 17ms (DB: 1) | 302 Found [http://0.0.0.0/posts/18/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:09:05) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (1.5ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Completed in 30ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:09:08) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (109.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:11:50) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (1.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:11:52) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 12:12:24) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (76.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.8ms)
+Completed in 90ms (View: 83, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:12:26) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.6ms)
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:12:27) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (40.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:13:25) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (6.4ms)
+  [4;36;1mComment Load (1.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-01 12:13:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-01 12:13:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "post"=>{"body"=>"", "title"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 85ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-01 12:14:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-10-01 12:14:35) [GET]
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-01 12:14:36) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 12:14:38) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (8.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.6ms)
+Completed in 21ms (View: 14, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:14:40) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:14:41) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `save' for #<Class:0x2318934>):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (106.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:15:22) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:27:03) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:32:49) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 89ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:32:49) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.7ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:32:59) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:32:59) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:33:20) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `save' for #<Class:0x23a229c>):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:36:53) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:55:in `create'
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-10-01 12:38:02) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+
+SyntaxError (/Users/chrisp/Desktop/GFCTest/app/controllers/comments_controller.rb:93: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:39:44) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `save' for #<Class:0x2379bf8>):
+  app/controllers/comments_controller.rb:58:in `create'
+  app/controllers/comments_controller.rb:57:in `create'
+
+Rendered rescues/_trace (110.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:40:04) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:58:in `create'
+  app/controllers/comments_controller.rb:57:in `create'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:40:37) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"redsfg"}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;36;1mComment Create (0.5ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "post_id", "user_id", "created_at", "email") VALUES('2009-10-01 16:40:37', 'redsfg', 12, NULL, '2009-10-01 16:40:37', NULL)[0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 18ms (DB: 1) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:40:37) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.6ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:40:40) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"sdfgsdfg"}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;35;1mComment Create (0.4ms)[0m   [0mINSERT INTO "comments" ("updated_at", "body", "post_id", "user_id", "created_at", "email") VALUES('2009-10-01 16:40:40', 'sdfgsdfg', 12, NULL, '2009-10-01 16:40:40', NULL)[0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 18ms (DB: 1) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:40:40) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (74.9ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.1ms)
+Rendered comments/_comment (0.4ms)
+Completed in 92ms (View: 85, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:40:42) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActiveRecord::RecordInvalid (Validation failed: Body can't be blank):
+  app/controllers/comments_controller.rb:58:in `create'
+  app/controllers/comments_controller.rb:57:in `create'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-01 12:41:27) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-01 12:41:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "post"=>{"body"=>"", "title"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-10-01 12:43:18) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://0.0.0.0/posts/12/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 12:43:22) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.6ms)
+Completed in 21ms (View: 14, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-10-01 12:43:23) [GET]
+  [4;35;1mComment Load (4.0ms)[0m   [0mSELECT * FROM "comments" [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 41ms (View: 30, DB: 4) | 200 OK [http://0.0.0.0/comments]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-10-01 12:43:25) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/comments/8/edit]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-10-01 12:43:28) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "id"=>"8", "comment"=>{"body"=>"", "post_id"=>"5"}}
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+Completed in 18ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/comments/8]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-10-01 12:44:15) [GET]
+  [4;36;1mComment Load (3.8ms)[0m   [0;1mSELECT * FROM "comments" [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 34ms (View: 25, DB: 4) | 200 OK [http://0.0.0.0/comments]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 12:44:19) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.8ms)
+Completed in 21ms (View: 14, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:44:20) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 12:44:25) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (8.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.8ms)
+Completed in 90ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:44:29) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (7.3ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:50:35) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:50:35) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.5ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:50:36) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:50:36) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:50:38) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:50:38) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.4ms)
+  [4;36;1mComment Load (68.8ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.3ms)
+Rendered comments/_comment (0.4ms)
+Completed in 93ms (View: 17, DB: 69) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:50:53) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:50:53) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (4.1ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 12:50:55) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 12:50:55) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (3.9ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.5ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:01:18) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:01:18) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (4.0ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.3ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:01:19) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 84ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:01:19) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (7.1ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:01:20) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:01:20) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:01:58) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.5ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.3ms)
+
+ActionView::TemplateError (undefined method `comment' for #<Post:0x23a017c>) on line #16 of app/views/posts/show.html.erb:
+13: 	</div>
+14: 	
+15: 	
+16: <% form_for [@post.comment, Comment.new] do |f| %>
+17: 	<%= f.error_messages%>
+18: 	<p>
+19: 		<h2>New Comment</h2>
+
+    app/views/posts/show.html.erb:16
+    app/controllers/posts_controller.rb:32:in `show'
+
+Rendered rescues/_trace (114.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:02:05) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.5ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:05:57) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+NoMethodError (undefined method `error_messages_for' for #<CommentsController:0x245d060>):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (34.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:07:14) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+NoMethodError (undefined method `error_messages_for' for #<CommentsController:0x234db98>):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (103.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:09:48) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 22ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:10:18) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.9ms)
+Completed in 18ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:10:49) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (0.6ms)
+Rendered comments/_comment (0.3ms)
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:10:57) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+NoMethodError (undefined method `comment' for #<Post:0x2376ac0>):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:12) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+NameError (undefined local variable or method `flsh' for #<CommentsController:0x2270ab8>):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:20) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 18ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:12:20) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (7.3ms)
+  [4;35;1mComment Load (0.6ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:21) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:12:21) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.7ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.5ms)
+Rendered comments/_comment (0.4ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:22) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:12:22) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.9ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:32) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:12:32) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.2ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:12:34) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:12:34) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:13:32) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:13:32) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.2ms)
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:13:33) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:13:33) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.9ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:13:49) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+NoMethodError (undefined method `error_messages' for #<Comment:0x242492c>):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:00) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:00) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (3.9ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:01) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:01) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (4.0ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:09) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:09) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (3.9ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:10) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:10) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (4.7ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:42) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:42) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (4.3ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:44) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:44) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (3.8ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.0ms)
+Rendered comments/_comment (0.4ms)
+Completed in 23ms (View: 14, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:14:44) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:14:44) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (3.9ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.3ms)
+Completed in 22ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:17:01) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 19ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:17:46) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 19ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-10-01 13:18:26) [GET]
+  [4;35;1mComment Load (4.0ms)[0m   [0mSELECT * FROM "comments" [0m
+Rendering template within layouts/application
+Rendering comments/index
+Completed in 36ms (View: 26, DB: 4) | 200 OK [http://0.0.0.0/comments]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-01 13:18:28) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 13:18:29) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.3ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (2.0ms)
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:18:29) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.6ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:18:30) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 20ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:19:28) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 19ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:19:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"", "post_id"=>"12"}}
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (103.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:20:08) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 19ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:20:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"", "post_id"=>"12"}}
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/comments_controller.rb:61:in `create'
+
+Rendered rescues/_trace (35.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:20:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"asdf", "post_id"=>"12"}}
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/comments_controller.rb:54:in `create'
+
+Rendered rescues/_trace (105.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:20:43) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 22ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/12/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:21:11) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActionView::MissingTemplate (Missing template comments/create.erb in view path app/views):
+  app/controllers/comments_controller.rb:62:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:22:27) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/show
+
+ActionView::TemplateError (undefined method `user' for #<Comment:0x23fa640>) on line #3 of app/views/comments/show.html.erb:
+1: <p>
+2: <b>User:</b>
+3: <%=h @comment.user.name%>
+4:   <b>Post:</b>
+5:   <%=h @comment.post_id %>
+6: </p>
+
+    app/views/comments/show.html.erb:3
+    app/controllers/comments_controller.rb:62:in `create'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:23:20) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/show
+
+ActionView::TemplateError (undefined method `user' for #<Comment:0x2281b60>) on line #3 of app/views/comments/show.html.erb:
+1: <p>
+2: <b>User:</b>
+3: <%=h @comment.user.name%>
+4:   <b>Post:</b>
+5:   <%=h @comment.post_id %>
+6: </p>
+
+    app/views/comments/show.html.erb:3
+    app/controllers/comments_controller.rb:62:in `create'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:24:07) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering comments/show
+
+ActionView::TemplateError (edit_comment_url failed to generate from {:action=>"edit", :controller=>"comments", :id=>#<Comment id: nil, post_id: 12, body: "", created_at: nil, updated_at: nil, user_id: nil, email: nil>}, expected: {:controller=>"comments", :action=>"edit"}, diff: {:id=>#<Comment id: nil, post_id: 12, body: "", created_at: nil, updated_at: nil, user_id: nil, email: nil>}) on line #12 of app/views/comments/show.html.erb:
+9: </p>
+10: 
+11: 
+12: <%= link_to 'Edit', edit_comment_path(@comment) %> |
+13: <%= link_to 'Back', comments_path %>
+
+    (eval):16:in `edit_comment_path'
+    app/views/comments/show.html.erb:12
+    app/controllers/comments_controller.rb:62:in `create'
+
+Rendered rescues/_trace (47.2ms)
+Rendered rescues/_request_and_response (70.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:25:31) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActionView::MissingTemplate (Missing template comments/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:25:48) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+
+ActionView::MissingTemplate (Missing template comments/create.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:26:17) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:26:17) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.3ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.3ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:26:19) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:26:19) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.5ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.8ms)
+Rendered comments/_comment (0.3ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:26:20) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>""}}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 15ms (DB: 0) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:26:20) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.7ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (3.1ms)
+Rendered comments/_comment (0.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 13:26:22) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"12", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"dfsgdf"}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+  [4;36;1mComment Create (0.4ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "post_id", "user_id", "created_at", "email") VALUES('2009-10-01 17:26:22', 'dfsgdf', 12, NULL, '2009-10-01 17:26:22', NULL)[0m
+Redirected to http://0.0.0.0:3000/posts/12
+Completed in 17ms (DB: 1) | 302 Found [http://0.0.0.0/posts/12/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 13:26:22) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (6.5ms)
+  [4;35;1mComment Load (0.5ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered comments/_comment (2.9ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://0.0.0.0/posts/12]
