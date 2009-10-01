@@ -16577,3 +16577,122 @@ Processing CommentsController#create (for 127.0.0.1 at 2009-09-30 11:06:39) [POS
 Rendering comments/create
 Rendered comments/_comment (3.5ms)
 Completed in 41ms (View: 24, DB: 1) | 200 OK [http://0.0.0.0/posts/18/comments]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-01 11:42:35) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 83ms (View: 63, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 11:42:38) [GET]
+  [4;36;1mPost Load (23.6ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (7.8ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (338.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.7ms)
+Completed in 464ms (View: 363, DB: 32) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2009-10-01 11:42:41) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/site/about]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-01 11:42:43) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-01 11:44:35) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (8.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.6ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 11:44:37) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.8ms)
+  [4;36;1mComment Load (1.3ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (1.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Completed in 41ms (View: 32, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-10-01 11:44:40) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"test"}}
+
+SyntaxError (/Users/chrisp/Desktop/GFCTest/app/controllers/comments_controller.rb:87: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (29.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-10-01 11:46:13) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"test"}}
+
+SyntaxError (/Users/chrisp/Desktop/GFCTest/app/controllers/comments_controller.rb:88: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-10-01 11:46:33) [POST]
+  Parameters: {"commit"=>"Add Comment", "post_id"=>"18", "authenticity_token"=>"XBMY8Viqy+7LQd8WjzTDX+Rasshj10an7i/LiyzoG/w=", "comment"=>{"body"=>"test"}}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+  [4;36;1mComment Create (16.3ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "post_id", "user_id", "created_at", "email") VALUES('2009-10-01 15:46:33', 'test', 18, NULL, '2009-10-01 15:46:33', NULL)[0m
+Redirected to http://0.0.0.0:3000/posts/18
+Completed in 57ms (DB: 17) | 302 Found [http://0.0.0.0/posts/18/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-01 11:46:33) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 18) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.9ms)
+  [4;35;1mComment Load (1.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered comments/_comment (3.1ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.4ms)
+Rendered comments/_comment (0.3ms)
+Rendered comments/_comment (0.3ms)
+Completed in 33ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/posts/18]
