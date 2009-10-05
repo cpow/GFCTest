@@ -1,8 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :posts, :has_many => :comments
   map.resources :comments, :belongs_to => :posts
-
-
   
   map.connect "users/login", :controller => 'users', :action => "login"
   map.connect "users/logout", :controller => 'users', :action => "logout"
