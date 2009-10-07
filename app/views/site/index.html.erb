@@ -38,4 +38,32 @@ google.friendconnect.container.renderOpenSocialGadget(
   skin);
 </script>
 
+
+<!-- Include the Google Friend Connect javascript library. -->
+<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
+<!-- Define the div tag where the gadget will be inserted. -->
+<div id="div-8915713170372907736" style="width:250px;border:1px solid #cccccc;"></div>
+<!-- Render the gadget into a div. -->
+<script type="text/javascript">
+var skin = {};
+skin['BORDER_COLOR'] = '#cccccc';
+skin['ENDCAP_BG_COLOR'] = '#f2f8de';
+skin['ENDCAP_TEXT_COLOR'] = '#4d4e50';
+skin['ENDCAP_LINK_COLOR'] = '#60aa45';
+skin['ALTERNATE_BG_COLOR'] = '#ffffff';
+skin['CONTENT_BG_COLOR'] = '#ffffff';
+skin['CONTENT_LINK_COLOR'] = '#60aa45';
+skin['CONTENT_TEXT_COLOR'] = '#333333';
+skin['CONTENT_SECONDARY_LINK_COLOR'] = '#006b97';
+skin['CONTENT_SECONDARY_TEXT_COLOR'] = '#666666';
+skin['CONTENT_HEADLINE_COLOR'] = '#4d4e50';
+google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+google.friendconnect.container.renderOpenSocialGadget(
+ { id: 'div-8915713170372907736',
+   url:'http://staging.friendconnect.google.com/friendconnect/gadgets/poll.xml',
+   site: '00339635363751239472' },
+  skin);
+</script>
+
+
 </body>
