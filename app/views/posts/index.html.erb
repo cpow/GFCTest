@@ -2,7 +2,8 @@
 
 <%= render :partial => @posts %>
 
-<%= will_paginate @posts%>
+<%= will_paginate @posts,  :next_label => "Older",
+						   :prev_label => "Newer"%>
 
 <br /><br />
 
