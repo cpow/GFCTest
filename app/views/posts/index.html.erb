@@ -1,5 +1,8 @@
 <% @page_title = "Blog"%>
+
 <%= render :partial => @posts %>
+
+<%= will_paginate @posts%>
 
 <br /><br />
 

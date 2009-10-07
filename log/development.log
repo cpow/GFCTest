@@ -19873,3 +19873,315 @@ Rendering posts/show
 Rendered posts/_post (6.2ms)
   [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 19) [0m
 Completed in 19ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/posts/19]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-07 15:21:46) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 82ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-10-07 15:21:46) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-10-07 15:21:51) [POST]
+  Parameters: {"user"=>{"password"=>"utest123", "email"=>"admin"}, "commit"=>"Submit!", "authenticity_token"=>"0pUVXSWJ9NI1UgjbU3ydxrOw0XFdJHgWc9yrEnxc3IY="}
+Redirected to http://0.0.0.0:3000/users
+Completed in 25ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-10-07 15:21:51) [GET]
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://0.0.0.0/users]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2009-10-07 15:21:52) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:21:53) [GET]
+  [4;35;1mPost Load (1.3ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (260.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (2.2ms)
+Completed in 286ms (View: 279, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-07 15:22:06) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 90ms (View: 84, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-07 15:22:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0pUVXSWJ9NI1UgjbU3ydxrOw0XFdJHgWc9yrEnxc3IY=", "post"=>{"body"=>"sdfsdf", "title"=>"sdfsdf"}}
+  [4;36;1mPost Create (0.5ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-10-07 19:22:09', 'sdfsdf', 'sdfsdf', '2009-10-07 19:22:09')[0m
+Redirected to http://0.0.0.0:3000/posts/20
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-07 15:22:09) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 20) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (9.9ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 20) [0m
+Completed in 29ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/posts/20]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-07 15:22:11) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-07 15:22:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0pUVXSWJ9NI1UgjbU3ydxrOw0XFdJHgWc9yrEnxc3IY=", "post"=>{"body"=>"rghhhjj", "title"=>"gthuykkuyt"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-10-07 19:22:15', 'gthuykkuyt', 'rghhhjj', '2009-10-07 19:22:15')[0m
+Redirected to http://0.0.0.0:3000/posts/21
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-07 15:22:15) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 21) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (8.0ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 21) [0m
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/posts/21]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-07 15:22:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-07 15:22:24) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0pUVXSWJ9NI1UgjbU3ydxrOw0XFdJHgWc9yrEnxc3IY=", "post"=>{"body"=>"this is another post", "title"=>"this is another post"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-10-07 19:22:24', 'this is another post', 'this is another post', '2009-10-07 19:22:24')[0m
+Redirected to http://0.0.0.0:3000/posts/22
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-07 15:22:24) [GET]
+  Parameters: {"id"=>"22"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 22) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (7.2ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 22) [0m
+Completed in 22ms (View: 15, DB: 1) | 200 OK [http://0.0.0.0/posts/22]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:22:26) [GET]
+  [4;36;1mPost Load (1.9ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (8.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (2.0ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.7ms)
+Completed in 99ms (View: 22, DB: 4) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-10-07 15:22:34) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-10-07 15:22:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"0pUVXSWJ9NI1UgjbU3ydxrOw0XFdJHgWc9yrEnxc3IY=", "post"=>{"body"=>"I really do...", "title"=>"I wonder if the paginate gem is working correctly"}}
+  [4;36;1mPost Create (0.4ms)[0m   [0;1mINSERT INTO "posts" ("updated_at", "title", "body", "created_at") VALUES('2009-10-07 19:22:45', 'I wonder if the paginate gem is working correctly', 'I really do...', '2009-10-07 19:22:45')[0m
+Redirected to http://0.0.0.0:3000/posts/23
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-10-07 15:22:45) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 23) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (10.0ms)
+  [4;35;1mComment Load (0.2ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 23) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/posts/23]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:22:48) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (8.7ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (2.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.7ms)
+Completed in 32ms (View: 23, DB: 4) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:07) [GET]
+  [4;35;1mPost Load (1.9ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (8.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (2.1ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (2.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (2.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.6ms)
+Completed in 33ms (View: 23, DB: 4) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:18) [GET]
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (7.3ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (1.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (2.0ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.8ms)
+Completed in 27ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:24) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPost Load (1.5ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (8.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.9ms)
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://0.0.0.0/posts?page=2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:26) [GET]
+  Parameters: {"page"=>"1"}
+  [4;35;1mPost Load (1.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (7.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (2.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.7ms)
+Completed in 28ms (View: 18, DB: 3) | 200 OK [http://0.0.0.0/posts?page=1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:47) [GET]
+  Parameters: {"page"=>"1"}
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (7.1ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (1.6ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.9ms)
+Completed in 29ms (View: 20, DB: 3) | 200 OK [http://0.0.0.0/posts?page=1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:49) [GET]
+  Parameters: {"page"=>"2"}
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 5[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 18) [0m
+Rendered posts/_post (7.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 12) [0m
+Rendered posts/_post (2.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 6) [0m
+Rendered posts/_post (1.7ms)
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://0.0.0.0/posts?page=2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-07 15:25:53) [GET]
+  Parameters: {"page"=>"1"}
+  [4;35;1mPost Load (1.4ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 23) [0m
+Rendered posts/_post (8.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 22) [0m
+Rendered posts/_post (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 21) [0m
+Rendered posts/_post (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 20) [0m
+Rendered posts/_post (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 19) [0m
+Rendered posts/_post (1.6ms)
+Completed in 27ms (View: 17, DB: 4) | 200 OK [http://0.0.0.0/posts?page=1]
