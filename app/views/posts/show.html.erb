@@ -1,18 +1,13 @@
 <% @page_title = @post.title%>
 
 <h1><%= link_to_unless_current h(@post.title), @post %></h1>	
-
 	<%= simple_format h(@post.body) %>
 
-		
-		<div id="postContent">
-			Posted <%= @post.created_at.strftime("%A, %b %d")%> <br />
-			
-			
-			<%= @post.comments.count%> comments
-			
-			<br />
-		</div>
+	<div id="postContent">
+		Posted <%= @post.created_at.strftime("%A, %b %d")%> <br />
+		<%= @post.comments.count%> comments
+		<br />
+	</div>
 
 	<!-- Include the Google Friend Connect javascript library. -->
 	<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
