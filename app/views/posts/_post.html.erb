@@ -1,6 +1,7 @@
 <h1><%= link_to_unless_current h(post.title), post %></h1>	
 
-	<%= simple_format h(post.body) %>
+	<%= simple_format(truncate(post.body, :length => 300)) %>
+
 		
 		<div id="postContent">
 			Posted <%= post.created_at.strftime("%A, %b %d")%> <br />
@@ -11,26 +12,4 @@
 			<br />
 		</div>
 		
-		<!-- Include the Google Friend Connect javascript library. -->
-		<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
-		<!-- Define the div tag where the gadget will be inserted. -->
-		<div id="div-8843357558308117970" style="width:100%;"></div>
-		<!-- Render the gadget into a div. -->
-		<script type="text/javascript">
-		var skin = {};
-		skin['HEIGHT'] = '21';
-		skin['BUTTON_STYLE'] = 'compact';
-		skin['BUTTON_TEXT'] = 'Recommend it!';
-		skin['BUTTON_ICON'] = 'default';
-		google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
-		google.friendconnect.container.renderOpenSocialGadget(
-		 { id: 'div-8843357558308117970',
-		   url:'http://staging.friendconnect.google.com/friendconnect/gadgets/recommended_pages.xml',
-		   height: 21,
-		   site: '00339635363751239472',
-		   'view-params':{"pageUrl":location.href,"pageTitle":(document.title ? document.title : location.href),"docId":"recommendedPages"}
-		 },
-		  skin);
-		</script>
-		
-		<br />
+	
