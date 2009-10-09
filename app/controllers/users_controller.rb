@@ -20,7 +20,7 @@ end
        else
          user = User.find_by_email_and_password(@user.email, @user.password) 
          if user 
-           session[:user_id] = user.id 
+           session[:user_id] = user.id
            flash[:notice] = "User #{user.name} logged in!" 
            redirect_to :controller => "site", :action => "index" 
          else 

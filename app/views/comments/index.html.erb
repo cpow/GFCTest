@@ -2,12 +2,14 @@
 
 <table>
   <tr>
+	<th>User</th>
     <th>Post</th>
     <th>Body</th>
   </tr>
 
 <% @comments.each do |comment| %>
   <tr>
+	<td><%=h comment.user_id %></td>
     <td><%=h comment.post_id %></td>
     <td><%=h comment.body %></td>
     <td><%= link_to 'Show', comment %></td>

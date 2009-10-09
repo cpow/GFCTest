@@ -4,4 +4,5 @@ class User < ActiveRecord::Base
   validates_presence_of :name, :nickname, :email, :password  
   
   has_many :comments
+  has_many :posts
 end

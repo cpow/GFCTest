@@ -1,7 +1,7 @@
 <% div_for comment do%>
 	<p>
-		<strong>Posted <%= time_ago_in_words(comment.created_at) %> ago:</strong> <br />
+			<strong>Posted <%= time_ago_in_words(comment.created_at) %> ago by <%=comment.user.name%>:</strong>
+	 	<br />
 		<%= simple_format(comment.body)%>
-		<br />
 	</p>
 <%end%>

@@ -53,8 +53,18 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id])
     
-    @comment = @post.comments.new(params[:comment])
+    if session[:user_id] == 18796
+      @comment = @post.comments.new(params[:comment])
+    else
+      @user = User.find(session[:user_id])
+      @comment = @post.comments.new(params[:comment].merge :user_id => @user.id)
+  end
     
+    #@comment = current_user.comments.create(params[:comment])
+    
+  #@comment.user_id = session[:user_id]
+  #@comment.user.name = @user.name
+  
     if @comment.save
       flash[:notice] = 'Thank you for the comment'
       redirect_to @post
