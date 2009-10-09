@@ -25328,3 +25328,15 @@ Rendered comments/_comment (9.2ms)
   [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
 Rendered comments/_comment (1.2ms)
 Completed in 31ms (View: 23, DB: 2) | 200 OK [http://0.0.0.0/posts/2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-10-09 09:36:47) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://0.0.0.0/posts]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2009-10-09 09:36:47) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
