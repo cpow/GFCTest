@@ -4,7 +4,27 @@
 	On this page we will be testing different gadgets when they are needed. Be sure to test out any gadgets on this page and check back frequently to keep up-to-date on the gadgets.
 
 	<div id="tabbedContent">
-		<h2>Conversation Element<h2/>
+		<h2>Conversation Element</h2>
 		<iframe src="http://staging.friendconnect.google.com/friendconnect/discuss?scope=site&topic=This%20is%20a%20new%20Topic&root=%2F" style="width:300px; height:400px;" scrolling="no" allowtransparency="true" border="0" frameborder="0"></iframe>
+		
+		<h2>Event Gadget</h2>
+		
+		<!-- Include the Google Friend Connect javascript library. -->
+		<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
+		<!-- Define the div tag where the gadget will be inserted. -->
+		<div id="div-1785923244186477508" style="width:282px;border:1px solid #cccccc;"></div>
+		<!-- Render the gadget into a div. -->
+		<script type="text/javascript">
+		google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
+		google.friendconnect.container.renderOpenSocialGadget(
+		 { id: 'div-1785923244186477508',
+		   url:'http://www.google.com/ig/modules/socialevent.xml',
+		   site: '00339635363751239472',
+		   'view-params':{"title":"This is a title","scope":"PAGE","tz":"America/Anguilla","start":"2009-10-21 10:00:00","address":"201 cordaville rd. Southborough, ma","description":"This is the description for the event gadget on the gtc.utest.com sandbox site.","end":"2009-10-21 18:00:00"}
+		 });
+		</script>
+		
+		
+		
 	</div>
 	</body>
