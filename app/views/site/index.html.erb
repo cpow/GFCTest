@@ -42,7 +42,9 @@ google.friendconnect.container.renderOpenSocialGadget(
 
 
 <!-- Include the Google Friend Connect javascript library. -->
-<script type="text/javascript" src="http://staging.friendconnect.google.com/friendconnect/script/friendconnect.js"></script>
+<script type="text/javascript"> 
+	var SITE_ID  ='07789784515480644884'; 
+</script>
 <!-- Define the div tag where the gadget will be inserted. -->
 <div id="div-8915713170372907736" style="width:250px;border:1px solid #cccccc;"></div>
 <!-- Render the gadget into a div. -->
@@ -62,8 +64,8 @@ skin['CONTENT_HEADLINE_COLOR'] = '#4d4e50';
 google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
 google.friendconnect.container.renderOpenSocialGadget(
  { id: 'div-8915713170372907736',
-   url:'http://staging.friendconnect.google.com/friendconnect/gadgets/poll.xml',
-   site: '00339635363751239472' },
+   url:'http://www.google.com/friendconnect/gadgets/poll.xml',
+   site: '07789784515480644884' },
   skin);
 </script>
 
