@@ -25439,3 +25439,36 @@ Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:12:34) [GET]
 Rendering template within layouts/application
 Rendering site/index
 Completed in 17ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-01-27 11:17:48) [GET]
+  [4;36;1mPost Load (1.3ms)[0m   [0;1mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 3) [0m
+Rendered posts/_post (277.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_post (3.5ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 1) [0m
+Rendered posts/_post (2.0ms)
+Completed in 318ms (View: 309, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-01-27 11:17:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 3) [0m
+  [4;36;1mComment Load (0.1ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 88ms (View: 81, DB: 1) | 200 OK [http://0.0.0.0/posts/3]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-01-27 11:17:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 3) [0m
+  [4;35;1mComment Load (0.1ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 24ms (View: 13, DB: 3) | 200 OK [http://0.0.0.0/posts/3]

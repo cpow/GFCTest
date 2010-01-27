@@ -83,6 +83,10 @@ body {
 	width: 60%;
 	font-size: 10pt;
 }
+#button {
+	float: left;
+	width: 200px;
+}
 
 fieldset {
 	background: #f3ede1;
