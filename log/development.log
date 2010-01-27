@@ -25340,3 +25340,102 @@ Processing UsersController#login (for 127.0.0.1 at 2009-10-09 09:36:47) [GET]
 Rendering template within layouts/users
 Rendering users/login
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:08:35) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 144ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-01-27 11:08:35) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-01-27 11:08:43) [POST]
+  Parameters: {"user"=>{"password"=>"utest", "email"=>"chris"}, "commit"=>"Submit!", "authenticity_token"=>"bVD7ISUZP6/nAY3tjnqmvwu7xIoWLPUbkNZtp+2/9wY="}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'utest' AND "users"."email" = 'chris') LIMIT 1[0m
+Rendering template within layouts/users
+Rendering users/login
+Completed in 155ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-01-27 11:08:48) [POST]
+  Parameters: {"user"=>{"password"=>"test", "email"=>"test"}, "commit"=>"Submit!", "authenticity_token"=>"bVD7ISUZP6/nAY3tjnqmvwu7xIoWLPUbkNZtp+2/9wY="}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = 'test' AND "users"."email" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:08:48) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 68ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:09:19) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:09:20) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:09:39) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:09:40) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:10:19) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:11:20) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:11:43) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:11:44) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:12:08) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:12:18) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-01-27 11:12:34) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/]
