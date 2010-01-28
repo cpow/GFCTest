@@ -1,8 +1,11 @@
 body {
 	font-family: arial;
-	background: white;
+	background: #A5A49F;
 	margin: auto;
 	text-align: center;
+	padding-bottom: 100px;
+	padding-top: 20px;
+	width: 800px;
 }
 #header {
 	font-size: 24pt;
@@ -10,17 +13,18 @@ body {
 	color: #4d4e50;
 }
 #whole_page {
-	width: 800px;
 	text-align: left;
 	color: #4d4e50;
 	margin: auto;
 	padding: 0;
+	background: white;
 }
 #content {
-	height: 100%;
+	height: 1500px;
 	font-size: 12pt;
 	color: #4d4e50;
-	padding-right: 5px;	
+	padding-right: 5px;
+	padding-left: 5px;	
 }
 #content h1 {
 	color: #67B64A;
@@ -45,11 +49,22 @@ body {
 #tabbedContent {
 	margin-left: 24px;
 }
+
+.rtop, .rbottom{display:block; background: #A5A49F;}
+.ntop, .nbottom{display:block; background: #A5A49F;}
+.rtop *, .rbottom *{display: block; height: 1px; overflow: hidden; background: #FFF;}
+.ntop *, .nbottom *{display: block; height: 1px; overflow: hidden; background: #FFF;}
+.r1{margin: 0 5px}
+.r2{margin: 0 3px}
+.r3{margin: 0 2px}
+.r4{margin: 0 1px; height: 2px}
+
+
 #sidebar {
 	float: right;
 	padding-bottom: 100px;
 	width: 250px;
-	padding-right: 3px;
+	padding-right: 10px;
 }
 #nav {
 	color: #4d4e50;
