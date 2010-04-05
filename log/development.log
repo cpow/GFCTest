@@ -25728,3 +25728,41 @@ Processing SiteController#index (for 127.0.0.1 at 2010-01-29 14:40:35) [GET]
 Rendering template within layouts/application
 Rendering site/index
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-05 16:26:13) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 26ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-04-05 16:26:13) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 75ms (View: 74, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-04-05 16:26:17) [POST]
+  Parameters: {"commit"=>"Submit!", "authenticity_token"=>"GdGP0sTvKG7btIz1+IXBCWlbmPuLjb43cK8ATnln/iY=", "user"=>{"password"=>"test", "email"=>"chris"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'chris' AND "users"."password" = 'test') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-05 16:26:17) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-05 16:26:19) [GET]
+  [4;35;1mPost Load (1.0ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 3) [0m
+Rendered posts/_post (149.6ms)
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_post (1.7ms)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 1) [0m
+Rendered posts/_post (1.6ms)
+Completed in 168ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/posts]
