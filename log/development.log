@@ -25766,3 +25766,34 @@ Rendered posts/_post (1.7ms)
   [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 1) [0m
 Rendered posts/_post (1.6ms)
 Completed in 168ms (View: 161, DB: 1) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-27 16:53:07) [GET]
+Redirected to http://0.0.0.0:3000/users/login
+Filter chain halted as [:require_login] rendered_or_redirected.
+Completed in 99ms (DB: 0) | 302 Found [http://0.0.0.0/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-04-27 16:53:07) [GET]
+Rendering template within layouts/users
+Rendering users/login
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://0.0.0.0/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-04-27 16:53:13) [POST]
+  Parameters: {"user"=>{"password"=>"test", "email"=>"chris"}, "commit"=>"Submit!", "authenticity_token"=>"WM/cIQmDu59FTDPQDrxQiggL9eB6lX0gfmP3Z71FYZo="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'test' AND "users"."email" = 'chris') LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed in 62ms (DB: 0) | 302 Found [http://0.0.0.0/users/login]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-27 16:53:13) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing SiteController#about (for 127.0.0.1 at 2010-04-27 16:53:28) [GET]
+Rendering template within layouts/application
+Rendering site/about
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://0.0.0.0/site/about]
