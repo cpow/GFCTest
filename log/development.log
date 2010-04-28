@@ -26179,3 +26179,316 @@ Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 11:41:48) [GET]
 Rendering template within layouts/statics
 Rendering statics/five
 Completed in 156ms (View: 154, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:16:30) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-28 12:16:35) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:16:37) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:16:43) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:16:44) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:16:44) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:16:45) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:16:46) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:16:48) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:16:48) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:16:49) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:16:49) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:16:50) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:17:32) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:18:07) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:18:54) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-28 12:24:38) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:24:40) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:24:42) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:24:43) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:24:44) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:24:44) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:25:17) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:25:18) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:25:20) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:25:21) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:25:21) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:25:22) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:25:42) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:26:14) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:26:19) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:26:19) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:26:20) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:26:20) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-28 12:26:21) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-04-28 12:26:32) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" ORDER BY created_at DESC LIMIT 4 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering posts/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 3) [0m
+Rendered posts/_post (378.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 2) [0m
+Rendered posts/_post (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "comments" WHERE ("comments".post_id = 1) [0m
+Rendered posts/_post (1.7ms)
+Completed in 402ms (View: 393, DB: 2) | 200 OK [http://0.0.0.0/posts]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:34:13) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 12:34:18) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:34:19) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:34:21) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:34:23) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 12:34:35) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 12:34:48) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:34:49) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:39:03) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing SiteController#index (for 127.0.0.1 at 2010-04-28 12:39:28) [GET]
+Rendering template within layouts/application
+Rendering site/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 12:39:31) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:53:12) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 84ms (View: 82, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:55:30) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 12:55:41) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 13:01:14) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]

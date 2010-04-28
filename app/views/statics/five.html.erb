@@ -1,10 +1,14 @@
 <html>
 <head>
+	<%= stylesheet_link_tag 'site' %>
 <meta name="description" content="This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous.">
 <title>This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! </title>
 <link rel="image_src" href="http://www.google.com/intl/en_ALL/images/srpr/logo1w.png">
 </head>
 <body>
+
+		
+
 	<div id="nav">
 		<span style="float: right"> 
 				<% if session[:user_id].nil? %>
@@ -21,12 +25,18 @@
 		<%= link_to_unless_current "Four", :controller => 'statics', :action => 'four'%> |
 		<%= link_to_unless_current "Five", :controller => 'statics', :action => 'five'%> 
 	</div>
+	
+	
+
 
 	<h1>Statics#five</h1>
-	<p>Find me in app/views/statics/five.html.erb</p>
+	<p>When you buzz this page you should see this...</p>
 
 	<a title="Post on Google Buzz" class="google-buzz-button" href="http://buzz-staging.sandbox.google.com/buzz/post" data-button-style="normal-count"></a>
 	<script type="text/javascript" src="http://buzz-staging.sandbox.google.com/buzz/api/button.js"></script>
+	
+	
+		
 </body>
 </html>
 

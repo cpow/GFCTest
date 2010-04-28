@@ -1,7 +1,8 @@
 <html>
 <head>
-<meta name="description" content="This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous. This is fundamentally ridiculous.">
-<title>This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! This is a very long title! </title>
+	<%= stylesheet_link_tag 'site' %>
+<meta name="description" content="This is the meta description for One.">
+<title>This is the title for One.</title>
 <link rel="image_src" href="http://www.google.com/intl/en_ALL/images/srpr/logo1w.png">
 </head>
 <body>
@@ -22,11 +23,12 @@
 		<%= link_to_unless_current "Five", :controller => 'statics', :action => 'five'%> 
 	</div>
 
-	<h1>Statics#One</h1>
-	<p>Find me in app/views/statics/five.html.erb</p>
+	<h1>Normal title and image source</h1>
+	<p>On this static page, when you Buzz you should be able to see a preview of a Google Image and the meta description/title of this page. Meta: This is the meta description for One. Title:This is the title for One. </p>
 
 	<a title="Post on Google Buzz" class="google-buzz-button" href="http://buzz-staging.sandbox.google.com/buzz/post" data-button-style="normal-count"></a>
 	<script type="text/javascript" src="http://buzz-staging.sandbox.google.com/buzz/api/button.js"></script>
+	<br /><br /><br /><br /><br /><br /><br /><br />
 </body>
 </html>
 
