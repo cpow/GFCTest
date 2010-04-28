@@ -1,0 +1,19 @@
+<div id="nav">
+	<span style="float: right"> 
+			<% if session[:user_id].nil? %>
+			<%= link_to_unless_current "Login", :controller => 'users', :action => 'login'%>
+			<% else %>
+			<%= link_to_unless_current "Logout", :controller => 'users', :action => 'logout'%>
+			<% end %>
+	</span>
+	
+	<%= link_to_unless_current "Home", :controller => 'site', :action => 'index'%> |
+	<%= link_to_unless_current "One", :controller => 'statics', :action => 'one'%> |
+	<%= link_to_unless_current "Two", :controller => 'statics', :action => 'two'%> |
+	<%= link_to_unless_current "Three", :controller => 'statics', :action => 'three'%> |
+	<%= link_to_unless_current "Four", :controller => 'statics', :action => 'four'%> |
+	<%= link_to_unless_current "Five", :controller => 'statics', :action => 'five'%> 
+</div>
+
+<h1>Statics#two</h1>
+<p>Find me in app/views/statics/two.html.erb</p>
