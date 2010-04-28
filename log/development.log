@@ -26546,3 +26546,81 @@ Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 14:00:30) [GET]
 Rendering template within layouts/statics
 Rendering statics/two
 Completed in 4ms (View: 2, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 14:11:31) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 14:13:59) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 14:14:04) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 14:14:08) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 14:14:10) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 14:14:12) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 14:14:47) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 14:15:05) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
+
+
+Processing StaticsController#one (for 127.0.0.1 at 2010-04-28 14:15:33) [GET]
+Rendering template within layouts/statics
+Rendering statics/one
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/one]
+
+
+Processing StaticsController#two (for 127.0.0.1 at 2010-04-28 14:15:34) [GET]
+Rendering template within layouts/statics
+Rendering statics/two
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/two]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 14:15:36) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#four (for 127.0.0.1 at 2010-04-28 14:15:37) [GET]
+Rendering template within layouts/statics
+Rendering statics/four
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://0.0.0.0/statics/four]
+
+
+Processing StaticsController#five (for 127.0.0.1 at 2010-04-28 14:15:38) [GET]
+Rendering template within layouts/statics
+Rendering statics/five
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/statics/five]
