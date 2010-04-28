@@ -3,7 +3,7 @@
 	<%= stylesheet_link_tag 'site' %>
 <meta name="description" content="This is the Meta Description for Statics -- Three">
 <title>This is the title for Statics -- Three </title>
-<link rel="video_src" href="http://www.youtube.com/v/aOZhbOhEunY&hl=en_US&fs=1&">
+<link href="http://www.youtube.com/v/aOZhbOhEunY&hl=en_US&fs=1&">
 </head>
 <body>
 <div id="nav">
@@ -23,11 +23,12 @@
 	<%= link_to_unless_current "Five", :controller => 'statics', :action => 'five'%> 
 </div>
 
-<h1>Normal Title, video in source</h1>
-<p>On this page we have a youtube video in the source. You should be able to see a youtube video. in the preview when you buzz this page. <br /><br />
-	<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/aOZhbOhEunY&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/aOZhbOhEunY&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<h1>Normal Title, Junk in the Source</h1>
+<p>On this page we have a youtube video. You should be able to see a preview thumbnail of this video in your buzz.
+
+	
 	</p>
-	<a title="Post on Google Buzz" class="google-buzz-button" href="http://buzz-staging.sandbox.google.com/buzz/post" data-button-style="normal-count"></a>
+	<a title="Post on Google Buzz" class="google-buzz-button" href="http://buzz-staging.sandbox.google.com/buzz/post?url=http://www.youtube.com/watch?v=YHe3ag3i8v8" data-button-style="normal-count"></a>
 	<script type="text/javascript" src="http://buzz-staging.sandbox.google.com/buzz/api/button.js"></script>
 	<br /><br /><br /><br /><br /><br /><br /><br />
 	</body>

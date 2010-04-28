@@ -26492,3 +26492,15 @@ Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 13:01:14) [GET]
 Rendering template within layouts/statics
 Rendering statics/three
 Completed in 9ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 13:18:45) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
+
+
+Processing StaticsController#three (for 127.0.0.1 at 2010-04-28 13:19:26) [GET]
+Rendering template within layouts/statics
+Rendering statics/three
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/statics/three]
